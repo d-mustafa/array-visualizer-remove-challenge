@@ -42,13 +42,9 @@ function keydownHandler(event) {
         myArray = [];
         fillArray();
     } else if (event.code == "Digit1") {
-        while(myArray.includes(400)) {
-            myArray.splice(myArray.indexOf(400), 1);
-        }
+        myArray = myArray.filter(number => number == 400);
     } else if (event.code == "Digit2") {
-        while(myArray.includes(200)) {
-                myArray.splice(myArray.indexOf(200), 1);
-        }
+        myArray = myArray.filter(number => number == 200);
     }
 }
 
