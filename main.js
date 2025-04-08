@@ -38,13 +38,13 @@ document.addEventListener("keydown", keydownHandler)
 
 function keydownHandler(event) {
     console.log(event.code);
-    if (event.code == "KeyR") {
+    if (event.code == "KeyR") { // resets the entire array
         myArray = [];
         fillArray();
     } else if (event.code == "Digit1") {
-        myArray = myArray.filter(number => number == 400);
+        myArray = myArray.filter(number => number == 200); // remakes the array, keeping only 200's
     } else if (event.code == "Digit2") {
-        myArray = myArray.filter(number => number == 200);
+        myArray = myArray.filter(number => number == 400); // remakes the array, keeping only 400's
     }
 }
 
